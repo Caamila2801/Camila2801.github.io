@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -154,12 +154,9 @@ section .cards .card {
 .comentarios {
   background-color: #000 ;
   color: #bfbfbf;
-  padding: 40px 15px;
+  padding: 50px 15px;
   list-style: none;
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.5) 15px 10px;
-  margin-bottom: 40px;
-  width: calc(33.3333% - 30px);
+  display: flex;
   text-align: center;
 }
 
@@ -171,19 +168,41 @@ section .cards .card {
 }
 
 #comentario_1 {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin-top: 50px;
-  padding: 0 10px;
-  justify-content: space-between;
+  flex: 1;
+  margin: 10px;
+
+}
+
+#comentario_2 img {
+  height: auto;
+  width: 120px;
+  border-radius: 100%;
+
+}
+
+#comentario_2 {
+  flex: 1;
+  margin: 50px;
+  text-align: center;
+}
+
+#comentario_3 img {
+  height: auto;
+  width: 120px;
+  border-radius: 100%;
+
+}
+
+#comentario_3 {
+  flex: 1;
+  margin: 10px;
 
 }
 
 .contact .row {
-  margin: 60px 0 90px;
+  margin: 75px 0 90px;
   display: flex;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   align-items: center;
   justify-content: space-around;
@@ -211,11 +230,10 @@ section .cards .card {
   cursor: pointer;
   border-radius: 5px;
   background: #333;
-  transition: 0.2s ease;
 }
 
 .contact form button:hover {
-  background: #eccccc;
+  background: #e0abab;
 }
 
 footer {
